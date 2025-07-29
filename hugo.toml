@@ -1,0 +1,201 @@
+baseURL = "https://lyk1256.github.io"
+languageCode = "ko-kr"
+title = "Junghoon's Playground"
+theme = "DoIt"
+
+# 기본 설정
+defaultContentLanguage = "ko"
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+
+# 페이지네이션 설정
+[pagination]
+  pagerSize = 12
+
+# Markdown 처리
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = "github"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# 메뉴 설정
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "포스트"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "태그"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    name = "카테고리"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "소개"
+    url = "/about/"
+    weight = 4
+
+# DoIt 테마 파라미터
+[params]
+  version = "0.2.X"
+  description = "4년차 백엔드 개발자의 기술 여정과 이직 준비기"
+  keywords = ["개발", "백엔드", "Java", "Spring", "이직"]
+  
+  # 기본 테마 (auto, light, dark)
+  defaultTheme = "auto"
+  
+  # Git 정보
+  gitRepo = "https://github.com/lyk1256/lyk1256.github.io"
+  
+  # 날짜 형식
+  dateFormat = "2006-01-02"
+  
+  # 사이트 정보
+  [params.app]
+    title = "Junghoon's Playground"
+    noFavicon = false
+    svgFavicon = ""
+    themeColor = "#ffffff"
+    iconColor = "#5bbad5"
+    tileColor = "#da532c"
+  
+  # 검색 설정
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+  
+  # 홈페이지 설정
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      gravatarEmail = ""
+      avatarURL = "/images/avatar.png"
+      title = "양정훈(Yang Junghoon)"
+      subtitle = "Junghoon's Playground | Dev & Life Blog"
+      typeit = true
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = true
+      paginate = 6
+      defaultHiddenFromHomePage = false
+  
+  # Social 설정
+  [params.social]
+    GitHub = "lyk1256"
+    Email = "lyk1256@naver.com"
+    RSS = true
+
+  # 페이지 설정
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = false
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    rssFullText = false
+    
+    # 목차 설정
+    [params.page.toc]
+      enable = true
+      keepStatic = true
+      auto = true
+    
+    # 코드 설정
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+    
+    # 수학 공식
+    [params.page.math]
+      enable = false
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      copyTex = true
+      mhchem = true
+    
+    # 댓글 시스템 (선택사항)
+    [params.page.comment]
+      enable = false
+
+# 다국어 설정
+[languages]
+  [languages.ko]
+    weight = 1
+    languageCode = "ko-kr"
+    languageName = "한국어"
+    hasCJKLanguage = true
+    
+    [languages.ko.params]
+      description = "개발과 생활 이야기"
+    
+    [languages.ko.menu]
+      [[languages.ko.menu.main]]
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "포스트"
+        url = "/posts/"
+        title = ""
+        weight = 1
+      [[languages.ko.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "태그"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.ko.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "카테고리"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.ko.menu.main]]
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "소개"
+        url = "/about/"
+        title = ""
+        weight = 4
+
+# 출력 형식
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

@@ -1,0 +1,7 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 태그 - Junghoon&#39;s Playground</title>
+        <link>http://localhost:1313/tags/</link>
+        <description>Tags - 태그 - Junghoon&#39;s Playground</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko-kr</language><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /></channel>
+</rss>
