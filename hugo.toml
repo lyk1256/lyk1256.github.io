@@ -156,7 +156,7 @@ enableEmoji = true
     hasCJKLanguage = true
     
     [languages.ko.params]
-      description = "개발과 생활 이야기"
+      description = "기술과 생활 이야기"
     
     [languages.ko.menu]
       [[languages.ko.menu.main]]
@@ -198,4 +198,4 @@ enableEmoji = true
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+  term = ["HTML"]
