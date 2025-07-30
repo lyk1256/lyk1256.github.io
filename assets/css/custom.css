@@ -1,0 +1,17 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-code: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-family-base);
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+code, pre {
+  font-family: var(--font-family-code);
+}
